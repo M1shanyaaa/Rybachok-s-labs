@@ -22,5 +22,6 @@ public class RealImage implements Image {
     @Override
     public void ManipulateImage(int x, int y) {
         System.out.println("Cords: " + x + ", " + y);
+
     }
 }
