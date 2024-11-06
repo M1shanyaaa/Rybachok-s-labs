@@ -10,6 +10,6 @@ public class EncryptMessageDecorator implements Message {
     @Override
     public String getText() {
         String originalText = message.getText();
-        return originalText + "\t(Encrypt Message)\t";
+        return originalText + " \t(Encrypt Message)\t";
     }
 }
