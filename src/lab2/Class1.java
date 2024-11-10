@@ -18,9 +18,7 @@ public class Class1 implements Interface1{
      * </p>
      */
 
-    public void method1() {
-        System.out.println("Class1.method1");
-    }
+
     /**
      * Implementation of the {@link Class3 method3()} method.
      * <p>
@@ -30,5 +28,10 @@ public class Class1 implements Interface1{
     @Override
     public void method3() {
         System.out.println("Class1.method3");
+    }
+
+    @Override
+    public void method1() {
+
     }
 }

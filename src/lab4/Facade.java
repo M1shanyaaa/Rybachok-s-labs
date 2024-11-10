@@ -42,6 +42,7 @@ public class Facade {
      * Destroys (deletes) the files and directories by calling the
      * delete method for files and the remove method for directories.
      *
+     * @param path The path where the files and directories will be destroyed.
      */
     void destroy(String path) {
         file1.delete("file1.txt");
