@@ -14,6 +14,7 @@ public class Facade {
      * Constructs a new Facade instance, initializing the necessary
      * file and directory objects.
      */
+
     public Facade() {
         this.directory1 = new SubClassDirectory();
         this.directory2 = new SubClassDirectory();
