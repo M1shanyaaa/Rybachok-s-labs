@@ -4,20 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Клас для зберігання та обробки колекції елементів мережі.
+ * Class for storing and processing a collection of network elements.
  */
 public class NetworkObjectStructure {
     private List<Element> elements = new ArrayList<>();
 
     /**
-     * Додає елемент до структури.
+     * Adds an element to the structure.
      */
     public void addElement(Element element) {
         elements.add(element);
     }
 
     /**
-     * Приймає відвідувача для всіх елементів.
+     * Accepts a visitor for all elements.
      */
     public void accept(Visitor visitor) {
         for (Element element : elements) {

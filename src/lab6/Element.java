@@ -1,8 +1,8 @@
 package lab6;
 
 /**
- * Інтерфейс елементу мережі.
- * Визначає метод accept() для прийняття відвідувача.
+ * Interface for a network element.
+ * Defines the accept() method for accepting a visitor.
  */
 public interface Element {
     void accept(Visitor visitor);

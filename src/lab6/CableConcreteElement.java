@@ -1,15 +1,21 @@
 package lab6;
 
 /**
- * Представляє кабель у мережі.
+ * Represents a cable in the network.
  */
 public class CableConcreteElement implements Element {
-    private final int length; // довжина кабелю в метрах
+    private final int length; // Cable length in meters
 
+    /**
+     * Constructor to initialize the cable length.
+     */
     public CableConcreteElement(int length) {
         this.length = length;
     }
 
+    /**
+     * Returns the length of the cable.
+     */
     public int getLength() {
         return length;
     }
@@ -19,4 +25,3 @@ public class CableConcreteElement implements Element {
         visitor.visitCable(this);
     }
 }
-

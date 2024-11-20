@@ -1,10 +1,21 @@
 package lab6;
 
 /**
- * Інтерфейс для відвідувача, що реалізує операції над елементами мережі.
+ * Interface for a visitor that performs operations on network elements.
  */
 public interface Visitor {
+    /**
+     * Visits a cable element.
+     */
     void visitCable(CableConcreteElement cable);
+
+    /**
+     * Visits a server element.
+     */
     void visitServer(ServerConcreteElement server);
+
+    /**
+     * Visits a workstation element.
+     */
     void visitWorkstation(WorkstationConcreteElement workstation);
 }

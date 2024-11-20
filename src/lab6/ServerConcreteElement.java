@@ -1,15 +1,21 @@
 package lab6;
 
 /**
- * Представляє сервер у мережі.
+ * Represents a server in the network.
  */
 public class ServerConcreteElement implements Element {
-    private final String model;
+    private final String model; // Server model
 
+    /**
+     * Constructor to initialize the server model.
+     */
     public ServerConcreteElement(String model) {
         this.model = model;
     }
 
+    /**
+     * Returns the model of the server.
+     */
     public String getModel() {
         return model;
     }
