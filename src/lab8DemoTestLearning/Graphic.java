@@ -1,4 +1,4 @@
-package Lab_8_Main;
+package lab8DemoTestLearning;
 
 /**
  * Інтерфейс Graphic визначає базову поведінку для всіх графічних елементів.

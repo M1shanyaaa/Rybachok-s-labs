@@ -1,4 +1,4 @@
-package Lab_8_Main;
+package lab8DemoTestLearning;
 
 /**
  * Клас Primitive представляє базовий графічний елемент.

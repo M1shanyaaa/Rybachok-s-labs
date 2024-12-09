@@ -1,7 +1,7 @@
-package lab8;
+package lab8ProVersionGUI;
 
 import javafx.scene.canvas.GraphicsContext;
 
-public interface Drawable {
+public interface Product {
     void draw(GraphicsContext gc);
 }

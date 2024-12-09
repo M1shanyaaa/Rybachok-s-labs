@@ -1,5 +1,5 @@
 
-<project name="Lab_4" default="generate-javadoc" basedir=".">
+<project name="Lab_8" default="generate-javadoc" basedir=".">
     <!-- Визначаємо змінні для документації та вихідних файлів -->
     <property name="doc" value="doc"/>
     <property name="sourceDir" value="src"/>

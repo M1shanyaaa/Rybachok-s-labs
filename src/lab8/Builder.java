@@ -1,47 +1,33 @@
 package lab8;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+/**
+ * The Builder interface defines methods for constructing parts of a product.
+ */
+public interface Builder {
 
-public class Builder {
-    public CompositeGraphic buildFromFile(String fileName) {
-        CompositeGraphic root = new CompositeGraphic();
+    /**
+     * Builds a primitive part (e.g., line) and adds it to the product.
+     *
+     * @param type the part type (e.g., "Line")
+     * @param color the color of the part
+     * @param size the size of the part
+     */
+    void buildPartA(String type, String color, int size);
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                String[] parts = line.split("\\s+");
-                switch (parts[0]) {
-                    case "CIRCLE" -> {
-                        double x = Double.parseDouble(parts[1]);
-                        double y = Double.parseDouble(parts[2]);
-                        double radius = Double.parseDouble(parts[3]);
-                        String color = parts[4];
-                        root.add(new Primitive(new CircleGraphic(x, y, radius, color)));
-                    }
-                    case "RECTANGLE" -> {
-                        double x = Double.parseDouble(parts[1]);
-                        double y = Double.parseDouble(parts[2]);
-                        double width = Double.parseDouble(parts[3]);
-                        double height = Double.parseDouble(parts[4]);
-                        String color = parts[5];
-                        root.add(new Primitive(new RectangleGraphic(x, y, width, height, color)));
-                    }
-                    case "LINE" -> {
-                        double x1 = Double.parseDouble(parts[1]);
-                        double y1 = Double.parseDouble(parts[2]);
-                        double x2 = Double.parseDouble(parts[3]);
-                        double y2 = Double.parseDouble(parts[4]);
-                        String color = parts[5];
-                        root.add(new Primitive(new LineGraphic(x1, y1, x2, y2, color)));
-                    }
-                }
-            }
-        } catch (IOException e) {
-            System.err.println("Error reading file: " + e.getMessage());
-        }
+    //    void buildPartB(String color, int size); // Для кола
 
-        return root;
-    }
+    /**
+     * Builds a composite part (e.g., rectangle or triangle) and adds it to the product.
+     *
+     * @param type the part type (e.g., "Rectangle")
+     * @param size the size of the part
+     */
+    void buildPartC(String type, int size);
+
+    /**
+     * Returns the final product.
+     *
+     * @return the constructed product
+     */
+    Product getResult();
 }

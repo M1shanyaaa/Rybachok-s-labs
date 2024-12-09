@@ -1,6 +1,4 @@
-package Lab_8_Main;
-
-import java.io.IOException;
+package lab8DemoTestLearning;
 
 public class Director {
     private Builder builder;

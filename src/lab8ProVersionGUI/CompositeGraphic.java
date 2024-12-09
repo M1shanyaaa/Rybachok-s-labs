@@ -1,4 +1,4 @@
-package lab8;
+package lab8ProVersionGUI;
 
 import javafx.scene.canvas.GraphicsContext;
 import java.util.ArrayList;

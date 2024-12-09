@@ -1,4 +1,4 @@
-package lab8;
+package lab8ProVersionGUI;
 
 public class Primitive implements Product {
     private final Drawable drawable;
