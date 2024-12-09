@@ -7,7 +7,7 @@ import java.util.List;
  * Class for storing and processing a collection of network elements.
  */
 public class NetworkObjectStructure {
-    private List<Element> elements = new ArrayList<>();
+    private final List<Element> elements = new ArrayList<>();
 
     /**
      * Adds an element to the structure.

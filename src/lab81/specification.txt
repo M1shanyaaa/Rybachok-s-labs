@@ -1,0 +1,5 @@
+Primitive Line red 5
+Primitive Line blue 2
+Primitive Circle green 3
+Composite Rectangle 4
+Composite Triangle 1
