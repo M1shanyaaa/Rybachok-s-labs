@@ -1,4 +1,4 @@
-package lab8;
+package TEST1;
 
 /**
  * ConcreteBuilder is a concrete implementation of the Builder interface.
@@ -9,21 +9,26 @@ public class ConcreteBuilder implements Builder {
     private Product product = new Product();
 
     /**
-     * Builds a primitive part (e.g., line or circle) and adds it to the product.
+     * Builds a primitive part (e.g., line) and adds it to the product.
      *
-     * @param type  the part type (e.g., "Line", "Circle")
+     * @param type the part type (e.g., "Line")
      * @param color the color of the part
-     * @param size  the size of the part
+     * @param size the size of the part
      */
     @Override
     public void buildPartA(String type, String color, int size) {
-        product.add("Part Primitive (" + type + ") with color: " + color + ", size: " + size);
+        product.add("Part Primitive ( " + type + " ) with color: " + color + ", size: " + size);
     }
 
+    //    @Override
+    //    public void buildPartB(String color, int size) {
+    //        product.add("Part Primitive (Circle) with color: " + color + ", size: " + size);
+    //    }
+
     /**
-     * Builds a composite part (e.g., rectangle, triangle) and adds it to the product.
+     * Builds a composite part (e.g., rectangle) and adds it to the product.
      *
-     * @param type the part type (e.g., "Rectangle", "Triangle")
+     * @param type the part type (e.g., "Rectangle")
      * @param size the size of the part
      */
     @Override
@@ -34,10 +39,11 @@ public class ConcreteBuilder implements Builder {
     /**
      * Returns the built product.
      *
-     * @return the constructed Product
+     * @return the constructed product
      */
     @Override
     public Product getResult() {
         return product;
     }
 }
+

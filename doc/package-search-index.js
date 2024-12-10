@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"exp"},{"l":"lab2"},{"l":"lab3"},{"l":"lab4"},{"l":"lab5"},{"l":"lab6"},{"l":"lab7"},{"l":"lab8"},{"l":"lab8DemoTestLearning"},{"l":"lab8ProVersionGUI"},{"l":"MKR1"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"exp"},{"l":"lab2"},{"l":"lab3"},{"l":"lab4"},{"l":"lab5"},{"l":"lab6"},{"l":"lab7"},{"l":"lab8"},{"l":"lab8DemoTestLearning"},{"l":"lab8ProVersionGUI"},{"l":"MKR1"},{"l":"TEST1"}];updateSearchResults();

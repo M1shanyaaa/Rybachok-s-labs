@@ -1,11 +1,10 @@
-package lab8;
+package TEST1;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The Product class represents the object being built by the Builder.
- * It contains the parts added during the construction process.
+ * The Product class represents the object being built.
  */
 public class Product {
     private List<String> parts = new ArrayList<>();

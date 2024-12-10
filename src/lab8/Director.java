@@ -2,7 +2,6 @@ package lab8;
 
 /**
  * The Director class manages the construction process of a product.
- * It defines the order in which Builder methods are called to create the full Product object.
  */
 public class Director {
     private Builder builder;
@@ -17,21 +16,26 @@ public class Director {
     }
 
     /**
-     * Manages the construction of a simple product.
+     * Builds parts of the product based on the specification line.
+     *
+     * @param specification a single line from the specification file
      */
-    public void constructSimpleProduct() {
-        builder.buildPartA("Circle", "default", 3); // Circle with default color and size 3
-        //        builder.buildPartB("default", 3); // Коло з кольором "default" і розміром 3
-        builder.buildPartC("Rectangle", 3); // Composite Rectangle with size 3
-    }
-
-    /**
-     * Manages the construction of a more complex product.
-     */
-    public void constructComplexProduct() {
-        builder.buildPartA("Circle", "red", 5); // Circle with red color and size 5
-        //        builder.buildPartB("green", 4); // Коло із зеленим кольором і розміром 4
-        builder.buildPartC("Triangle", 2); // Composite Triangle with size 2
+    public void buildFromSpecification(String specification) {
+        String[] parts = specification.split(" ");
+        switch (parts[0]) {
+            case "Primitive":
+                String primitiveType = parts[1];
+                String color = parts.length > 2 ? parts[2] : "default";
+                int size = parts.length > 3 ? Integer.parseInt(parts[3]) : 3;
+                builder.buildPartA(primitiveType, color, size);
+                break;
+            case "Composite":
+                String compositeType = parts[1];
+                int compositeSize = parts.length > 2 ? Integer.parseInt(parts[2]) : 3;
+                builder.buildPartC(compositeType, compositeSize);
+                break;
+            default:
+                System.out.println("Unknown specification: " + specification);
+        }
     }
 }
-
