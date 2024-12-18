@@ -6,7 +6,7 @@ package lab8;
  */
 public class ConcreteBuilder implements Builder {
 
-    private Product product = new Product();
+    private final Product product = new Product();
 
     /**
      * Builds a primitive part (e.g., line or circle) and adds it to the product.

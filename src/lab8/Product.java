@@ -8,7 +8,7 @@ import java.util.List;
  * It contains the parts added during the construction process.
  */
 public class Product {
-    private List<String> parts = new ArrayList<>();
+    private final List<String> parts = new ArrayList<>();
 
     /**
      * Adds a part to the product.
